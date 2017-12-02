@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>net.devfront.aws</groupId>
+    <groupId>net.devfront.aws.sqslambda</groupId>
     <artifactId>consumer-test</artifactId>
 
     <dependencies>
