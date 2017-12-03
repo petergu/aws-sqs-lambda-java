@@ -18,4 +18,4 @@ terraform apply
 curl https://{REPLACE-WITH-YOUR-API-GATEWAY-ID}.execute-api.us-east-1.amazonaws.com/Live/test?eventId=1
 ```
 
-Check your lambda cloud CloudWatch logs.
+Check your lambda CloudWatch logs.
