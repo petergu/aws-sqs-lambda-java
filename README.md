@@ -1,7 +1,7 @@
 # AWS Lambda and SQS Showcase Example
 A showcase example that integrates AWS SQS and Lambda, written in Java, using Dagger 2 as dependency injection, Terraform as deployment tool.
 
-##Highlights
+## Highlights
 
 * [Dagger 2](https://google.github.io/dagger/) as Dependency Injection(DI).
 * Highly testable codes, including:
