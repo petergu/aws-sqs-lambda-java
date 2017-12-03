@@ -18,3 +18,5 @@
 .project
 .classpath
 .settings
+
+.terraform

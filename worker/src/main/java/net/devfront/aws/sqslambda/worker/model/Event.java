@@ -7,6 +7,9 @@ public class Event {
     private Integer id;
     private String messageId;
 
+    public Event() {
+    }
+
     public Event(Integer id, String messageId) {
         this.id = id;
         this.messageId = messageId;
