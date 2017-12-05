@@ -8,7 +8,7 @@ The following figure shows all components:
 * The SQS queue receives and stores messages.
 * The CloudWatch Event Rule triggers the Lambda Consumer based on a schedule (e.g. every 5 minutes).
 * The Lambda Consumer reads as many messages as possible from the SQS and invoke a Lambda Worker for each message asynchronous.
-* The Lambda Worker does the actual computing work.
+* The Lambda Worker does the actual work.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/2072930/33588139-57fc87a4-d93f-11e7-9719-5add43acae12.png" width="800">
@@ -16,7 +16,7 @@ The following figure shows all components:
 
 ## Considerations for writing AWS Lambda functions.
 
-* AWS Lambda functions might seem like small, independent functions, we should not put everything into a single file, ignoring code reusability and separation of concerns.
+* AWS Lambda functions might seem like small, independent functions, but we should not put everything into a single file, ignore code reusability and separation of concerns.
 * Separate the Lambda handler (entry point) from your application logic. Lambda should be viewed only as one entry point into your application.
 * Using Dependency Injection ( DI ) pattern is great way to structure your Lambda codes.
 * Spring Framework DI is too heavy for Lambda.
