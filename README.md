@@ -25,7 +25,7 @@ The following figure shows all components:
 * By using Dagger 2, we create different services for different responsibilities of the application, we test them independently from others.
 * As a result, we have highly testable codes, including:
     * Unit tests, using Spock framework
-    * Integration tests, using [ElasticMQ](https://github.com/adamw/elasticmq), [mockito](https://github.com/mockito/mockito)
+    * Integration tests, using [ElasticMQ](https://github.com/adamw/elasticmq), [mockito](https://github.com/mockito/mockito), See [TestEnvironmentModuleModule](https://github.com/petergu/aws-sqs-lambda-java/blob/master/consumer-test/src/test/java/net/devfront/aws/sqslambda/consumer/module/TestEnvironmentModuleModule.java).
 * Automating everything by using Terraform.
 
 ## Quick Start
@@ -37,6 +37,9 @@ terraform init
 terraform apply
 ```
 
+There is an known issue in Dagger 2, You might need to do something like this:
+ [Is there any way of making IntelliJ IDEA recognizing Dagger 2 generated classes in a Java project?](https://stackoverflow.com/questions/33444356/is-there-any-way-of-making-intellij-idea-recognizing-dagger-2-generated-classes)
+ 
 Log into you AWS management console, check your API Gateway URL created by Terraform.
 
 Now you hit the API Gateway endpoint by entering the following commands:
